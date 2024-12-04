@@ -1,13 +1,10 @@
 import { readInput } from './inputReader';
+import { sortNumbersAsc } from "./helpers";
 
 const filePath = "data/day01/input.txt";
 
 const list1: number[] = [];
 const list2: number[] = [];
-
-function sortByNumber(a: number, b: number): number {
-    return a - b;
-}
 
 async function solve() {
     await readInput(filePath, (line: string) => {
@@ -17,8 +14,8 @@ async function solve() {
     });
 
     // sort lists
-    list1.sort(sortByNumber);
-    list2.sort(sortByNumber);
+    list1.sort(sortNumbersAsc);
+    list2.sort(sortNumbersAsc);
 
     // console.log(list1, list2);
 
