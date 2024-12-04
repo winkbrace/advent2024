@@ -8,14 +8,18 @@ In this project I will solve a couple of the advent of code challenges using Typ
 npm i
 ```
 
-## Compile
+## Compile 
+
+This will compile the typescript files to javascript on every file change.
 
 ```
-npx tsc
+npx tsc --watch
 ```
 
 ## Run
 
-```
+Execute the compiled files using node.
 
+```
+node bin/day01a.js
 ```
